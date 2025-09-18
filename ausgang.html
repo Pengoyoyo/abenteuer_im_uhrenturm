@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+    <title>Der Ausgang</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="finalraum" class="text">
+            
+            <h1>Der Ausgang</h1>
+            <p>Du stehst vor dem letzten Tor, das ins Freie führt.</p>
+
+        </div>
+
+        <div class="optionen">
+
+            <a href="freiesLicht.html">Ins Freie gehen</a>
+
+        </div>
+
+        <script>
+            if (localStorage.getItem('mechanikBeruehrt') !== 'true') {
+            document.getElementById('finalraum').innerHTML = `
+                <div class="text">
+                    <h1>Der Ausgang bleibt verschlossen</h1>
+                    <p>Eine unsichtbare Kraft hält die Tür zu. Du musst vorher die Mechanik im Labor berühren!</p>
+                </div>
+
+                <div class="optionen">
+                    <a href="Erwachen.html">Zurück in den Turm</a>
+                </div>
+            `;
+            }
+        </script>
+
+    </body>
+
+</html>
