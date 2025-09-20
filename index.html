@@ -1,0 +1,42 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="css/style.css">
+        <title>Abenteuer im Uhrenturm</title>
+    </head>
+
+    <body>
+        <div class="text">
+            <h1>Abenteuer im Uhrenturm</h1>
+
+            <p>
+                Dein Abenteuer beginnt hier. Du erblickst aus einiger Ferne ein massives Gebäude, bestehend aus einem Turm und ein paar Anbauten.
+                Es steht auf einer Lichtung mitten im Wald. Als du dich näherst öffnen sich zwei gewaltige Eichentüren und du betrittst 
+                eine beeindruckende Eingangshalle aus Marmor. In der Mitte des Raums steht auf einem Podest eine Schale mit einer klaren geruchslosen Flüssigkeit.
+            </p>
+
+            <img src="bilder/eingangshalle.jpeg" alt="Eingangshalle aus Marmor mit Schale auf einem Steinsockel">
+
+            <p>
+                Du hast nun zwei Optionen:
+
+            </p>
+        </div>
+
+        <div class="optionen">
+            <a href="seiten/erwachen.html">Du trinkst aus der Schale</a>
+            <a href="#" onclick="
+                if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
+                    try {
+                        window.close();
+                    } catch(e) {
+                        window.location.href = 'about:blank';
+                    }
+                }
+                return false;
+            ">Spiel beenden</a>
+        </div>
+
+    </body>
+
+
+</html>
