@@ -14,7 +14,7 @@
                 eine beeindruckende Eingangshalle aus Marmor. In der Mitte des Raums steht auf einem Podest eine Schale mit einer klaren geruchslosen Flüssigkeit.
             </p>
 
-            <img src="bilder/eingangshalle.jpeg" alt="Eingangshalle aus Marmor mit Schale auf einem Steinsockel">
+            <img src="bilder/eingangshalle.png" alt="Eingangshalle aus Marmor mit Schale auf einem Steinsockel" width="300">
 
             <p>
                 Du hast nun zwei Optionen:
@@ -24,6 +24,7 @@
 
         <div class="optionen">
             <a href="seiten/erwachen.html">Du trinkst aus der Schale</a>
+            <a href="seiten/ausgang.html">test</a>
             <a href="#" onclick="
                 if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
                     try {
@@ -35,6 +36,10 @@
                 return false;
             ">Spiel beenden</a>
         </div>
+
+        <script>
+            localStorage.setItem("mechanikBeruehrt", "false");
+        </script>
 
     </body>
 

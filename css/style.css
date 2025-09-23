@@ -29,7 +29,7 @@ h1, h2 {
     border: 2px solid silver;
     border-radius: 4px;
     transition: background-color 0.3s;
-    margin: auto;
+    margin: 20px;
     line-height: 1.6;
 
     

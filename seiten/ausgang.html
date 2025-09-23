@@ -9,30 +9,36 @@
         <div id="finalraum" class="text">
             
             <h1>Der Ausgang</h1>
-            <p>Du stehst vor dem letzten Tor, das ins Freie führt.</p>
+            <p>
+                Du stehst in einem kleinen Raum, dessen einziger weiterführender Weg ein gewaltiges beschlagenes Eichenholztor ist.
+                Mit all deiner Kraft stemmst du dich dagegen und ächzend lässt die Tür sich öffnen.
+            </p>
+
+            <img src="../bilder/ausgang.jpg" alt="Bild eines beschlagenen Eichentors" width="600">
 
         </div>
 
-        <div class="optionen">
-
-            <a href="freiesLicht.html">Ins Freie gehen</a>
-
-        </div>
 
         <script>
+            const finalraum = document.getElementById('finalraum');
+        
             if (localStorage.getItem('mechanikBeruehrt') !== 'true') {
-            document.getElementById('finalraum').innerHTML = `
-                <div class="text">
+                finalraum.innerHTML = `
                     <h1>Der Ausgang bleibt verschlossen</h1>
                     <p>Eine unsichtbare Kraft hält die Tür zu. Du musst vorher die Mechanik im Labor berühren!</p>
-                </div>
-
-                <div class="optionen">
-                    <a href="Erwachen.html">Zurück in den Turm</a>
-                </div>
-            `;
+                    <div class="optionen">
+                        <a href="Erwachen.html">Zurück in den Turm</a>
+                    </div>
+                `;
+            } else {
+                const optionen = document.createElement('div');
+                optionen.classList.add('optionen');
+                optionen.innerHTML = `<a href="ende.html">Du trittst durch das Tor</a>`;
+                finalraum.appendChild(optionen);
             }
         </script>
+        
+        
 
     </body>
 

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Das Ende - Freiheit</title>
+    </head>
+
+    <body>
+        <h1>Die Freiheit</h1>
+        
+        <div class="text">
+            <p>
+                Du trittst hinaus ins warme Sonnenlicht. Der mysteriöse Uhrenturm liegt nun hinter dir, 
+                seine Geheimnisse für immer in deinem Gedächtnis verankert. Die frische Luft füllt deine Lungen, 
+                und du spürst, wie sich die Anspannung der letzten Stunden von deinen Schultern löst.
+            </p>
+
+            <p>
+                Als du dich umdrehst, um einen letzten Blick auf den Turm zu werfen, bemerkst du, 
+                dass er bereits zu verblassen beginnt, als wäre er nur ein Traum gewesen. 
+                Doch das seltsame Ticken in deinem Herzen erinnert dich daran, dass alles real war.
+            </p>
+
+            <p>
+                Du hast das Abenteuer im Uhrenturm erfolgreich gemeistert und die Freiheit erlangt. 
+                Die Erfahrungen und Rätsel, die du gelöst hast, werden dich für immer begleiten.
+            </p>
+
+            <p>
+                <strong>Herzlichen Glückwunsch! Du hast das Spiel erfolgreich beendet!</strong>
+            </p>
+        </div>
+
+        <div class="optionen">
+            <a href="../index.html">Neues Spiel beginnen</a>
+            <a href="#" onclick="
+                if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
+                    try {
+                        window.close();
+                    } catch(e) {
+                        window.location.href = 'about:blank';
+                    }
+                }
+                return false;
+            ">Spiel beenden</a>
+        </div>
+    </body>
+</html>
