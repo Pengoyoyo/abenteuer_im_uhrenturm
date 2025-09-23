@@ -19,7 +19,11 @@
         </div>
 
         <script>
-            localStorage.setItem("mechanikBeruehrt", "true");
+            try {
+                localStorage.setItem("mechanikBeruehrt", "true");
+            } catch(e) {
+                console.log("localStorage nicht verfügbar");
+            }
         </script>
     
     <div class="optionen">
