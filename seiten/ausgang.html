@@ -1,6 +1,10 @@
 <html>
 
+    <!DOCTYPE html>
+<html lang="de">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Der Ausgang</title>
     <link rel="stylesheet" href="../css/style.css">
     </head>
@@ -14,7 +18,7 @@
                 Mit all deiner Kraft stemmst du dich dagegen und ächzend lässt die Tür sich öffnen.
             </p>
 
-            <img src="../bilder/ausgang.jpg" alt="Bild eines beschlagenen Eichentors" width="600">
+            <img src="../bilder/ausgang.jpg" alt="Bild eines beschlagenen Eichentors" class="img-2">
 
         </div>
 
@@ -25,7 +29,7 @@
             if (localStorage.getItem('mechanikBeruehrt') !== 'true') {
                 finalraum.innerHTML = `
                     <h1>Der Ausgang bleibt verschlossen</h1>
-                    <p>Eine unsichtbare Kraft hält die Tür zu. Du musst vorher die Mechanik im Labor berühren!</p>
+                    <p>Eine unsichtbare Kraft hält die Tür zu. Auf der Tür ist das Symbol eines Labors zu sehen</p>
                     <div class="optionen">
                         <a href="Erwachen.html">Zurück in den Turm</a>
                     </div>

@@ -5,7 +5,7 @@ body{
     margin: auto;
     line-height: 1.6;
     max-width: 70%;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 h1, h2 {
@@ -27,7 +27,7 @@ h1, h2 {
     border: 2px solid silver;
     border-radius: 4px;
     transition: background-color 0.3s;
-    margin: 20px;
+    margin: auto;
     line-height: 1.6;
 
     
@@ -53,7 +53,8 @@ h1, h2 {
     border: 1px solid #ffd700;
     border-radius: 4px;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin-top: 15;
+    margin-bottom: 15px;
   }
   
 a:hover {
@@ -61,12 +62,30 @@ a:hover {
     color: gold;
 }
 
-img {
+.img-1 {
     display:block;
     margin: 20px auto;
     border: 2px solid #555;
     border-radius: 8px;
-    max-width: 90%;
+    max-width: 30%;
+    height: auto;
+}
+
+.img-2 {
+    display:block;
+    margin: 20px auto;
+    border: 2px solid #555;
+    border-radius: 8px;
+    max-width: 60%;
+    height: auto;
+}
+
+.img-3 {
+    display:block;
+    margin: 20px auto;
+    border: 2px solid #555;
+    border-radius: 8px;
+    max-width: 60%;
     height: auto;
 }
 
@@ -82,4 +101,31 @@ img {
 body:hover {
     background-color: #131313;
     transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 95%;
+        margin-top: 10px;
+    }
+    
+    .optionen {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .optionen a {
+        min-width: auto;
+        max-width: none;
+        flex: none;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .text p {
+        margin: 10px;
+        padding: 8px;
+    }
 }
