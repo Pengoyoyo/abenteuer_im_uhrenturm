@@ -28,15 +28,11 @@
 
         <div class="optionen">
             <a href="seiten/erwachen.html">Du trinkst aus der Schale</a>
-            <a href="#" onclick="
-                if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
-                    try {
-                        window.close();
-                    } catch(e) {
-                        window.location.href = 'about:blank';
-                    }
-                }
-                return false;
+                <a href="#" onclick="
+            if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
+                window.location.href = 'about:blank';
+            }
+            return false;
             ">Spiel beenden</a>
         </div>
 

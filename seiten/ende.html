@@ -37,14 +37,10 @@
         <div class="optionen">
             <a href="../index.html">Neues Spiel beginnen</a>
             <a href="#" onclick="
-                if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
-                    try {
-                        window.close();
-                    } catch(e) {
-                        window.location.href = 'about:blank';
-                    }
-                }
-                return false;
+            if (confirm('Möchten Sie das Spiel wirklich beenden?')) {
+                window.location.href = 'about:blank';
+            }
+            return false;
             ">Spiel beenden</a>
         </div>
     </body>
