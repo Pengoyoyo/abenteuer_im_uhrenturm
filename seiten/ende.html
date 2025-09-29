@@ -42,5 +42,12 @@
             return false;
             ">Spiel beenden</a>
         </div>
+        <script>
+            try {
+                localStorage.setItem("mechanikBeruehrt", "false");
+            } catch(e) {
+                console.log("localStorage nicht verfügbar");
+            }
+        </script>
     </body>
 </html>
